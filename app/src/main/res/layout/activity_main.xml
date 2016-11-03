@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f00"
+    >
+
+    <com.cj.dynamicavatarview.ratio.RatioLayout
+        android:id="@+id/ratio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.cj.dynamicavatarview.ratio.DynamicAvatarView
+            android:id="@+id/dynamic"
+            android:src="@mipmap/iu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.cj.dynamicavatarview.ratio.RatioLayout>
+
+    <Button
+        android:text="退出"
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="exit"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:text="进入"
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/exit"
+        android:layout_alignTop="@id/exit"
+        android:onClick="enter"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
+
